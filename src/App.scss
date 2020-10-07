@@ -1,0 +1,16 @@
+@import '~bootstrap/scss/bootstrap';
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Lato', sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+button:hover {
+  text-decoration: none;
+}

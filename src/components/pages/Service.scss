@@ -1,0 +1,111 @@
+$purp: #7640ed;
+$dpurp: #452094;
+$yell: #ffdc7c;
+
+.main {
+  .container {
+    max-width: 1000px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+  }
+}
+
+.img__container {
+  width: 1000px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: #fff;
+  }
+  img {
+    width: 1000px;
+    position: absolute;
+    transform: scale(1.8);
+  }
+}
+
+.services__box {
+  padding: 30px 0 40px 0;
+}
+
+.services__each {
+  background: #92143f;
+  color: #fff;
+  padding: 80px 20px 0px 20px;
+  border-radius: 6px;
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.2);
+}
+
+.service__heading {
+  display: flex;
+  align-items: center;
+}
+
+// .sectionSecond {
+//   background: $purp;
+//   height: 700px;
+//   padding: 60px 24px;
+//   border-top-left-radius: 40px;
+//   border-top-right-radius: 40px;
+//   color: #fff;
+//   position: relative;
+//   &:after {
+//     content: '';
+//     position: absolute;
+//     background: $dpurp;
+//     height: 600px;
+//     width: 100px;
+//     bottom: 0;
+//     left: 0;
+//     opacity: 0;
+//   }
+//   .inner {
+//     position: relative;
+//     top: 60px;
+//     h3 {
+//       margin: 8px 0;
+//       opacity: 0;
+//       font-size: 2rem;
+//       font-weight: 900;
+//     }
+//     p {
+//       opacity: 0;
+//     }
+//     .btn-row {
+//       opacity: 0;
+//       a {
+//         background: $dpurp;
+//         width: 100%;
+//         border-radius: 18px;
+//         height: 60px;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         text-decoration: none;
+//         font-size: 1.1rem;
+//         color: #fff;
+//         text-transform: capitalize;
+//         font-weight: 600;
+//         margin-top: 48px;
+//       }
+//     }
+//   }
+// }
+
+@media (max-width: 990px) {
+  .container {
+    h3 {
+      display: none;
+    }
+  }
+}
